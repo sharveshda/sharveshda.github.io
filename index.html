@@ -1,28 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0f172a;color:white}
+header{padding:20px;text-align:center;background:#1e293b}
+header h1{font-size:2.5rem}
+header p{color:#94a3b8}
+section{padding:40px}
+.card{background:#1e293b;padding:20px;margin:20px 0;border-radius:15px;box-shadow:0 0 10px rgba(0,0,0,0.3)}
+h2{margin-bottom:10px;color:#38bdf8}
+ul{list-style:none}
+ul li{padding:5px 0}
+.projects a{color:#38bdf8;text-decoration:none}
+footer{text-align:center;padding:20px;background:#1e293b;margin-top:20px}
+.btn{display:inline-block;margin-top:10px;padding:10px 20px;background:#38bdf8;color:black;border-radius:20px;text-decoration:none;font-weight:bold}
+</style>
 </head>
 <body>
 
+<header>
     <h1>Your Name</h1>
-    <p>Email: your@email.com</p>
+    <p>Java Developer | Student | Tech Enthusiast</p>
+    <a href="#" class="btn">Download Resume</a>
+</header>
 
-    <h2>About Me</h2>
-    <p>I am a Java developer...</p>
+<section>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am a passionate developer learning Java, Data Structures, and Web Development.</p>
+    </div>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>GitHub</li>
-    </ul>
+    <div class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>HTML & CSS</li>
+            <li>GitHub</li>
+        </ul>
+    </div>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Student Management System</li>
-        <li>Calculator App</li>
-    </ul>
+    <div class="card projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="#">Student Management System</a></li>
+            <li><a href="#">Calculator App</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Your Name</p>
+</footer>
 
 </body>
 </html>
