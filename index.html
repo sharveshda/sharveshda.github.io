@@ -1,151 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modern Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #0f0f0f, #1a0000);
+        color: #fff;
+    }
+
+    header {
+        padding: 20px;
+        text-align: center;
+        background: #000;
+        box-shadow: 0 0 20px red;
+    }
+
+    header h1 {
+        color: #ff3c00;
+        text-shadow: 0 0 10px #ff3c00;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #ff3c00;
+        text-shadow: 0 0 5px #ff3c00;
+    }
+
+    section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .card {
+        background: #111;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px red;
+    }
+
+    footer {
+        background: #000;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 0 10px red;
+    }
+</style>
 </head>
 <body>
 
-<header class="navbar">
-  <h2 class="logo">MyPortfolio</h2>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header>
+    <h1>🔥 My Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section id="home" class="hero">
-  <h1>Hi, I'm <span>Ghady</span></h1>
-  <p>Frontend Developer • UI Designer</p>
-  <button>View Work</button>
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>Hello! I'm a developer passionate about building cool websites.</p>
+    </div>
 </section>
 
-<section id="projects" class="projects">
-  <h2>Projects</h2>
-  <div class="grid">
+<section id="projects">
+    <h2>Projects</h2>
     <div class="card">
-      <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" />
-      <h3>Tribute Page</h3>
+        <h3>Project 1</h3>
+        <p>Describe your project here.</p>
     </div>
     <div class="card">
-      <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" />
-      <h3>Quote App</h3>
+        <h3>Project 2</h3>
+        <p>Describe your project here.</p>
     </div>
-    <div class="card">
-      <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" />
-      <h3>Calculator</h3>
-    </div>
-  </div>
 </section>
 
-<section id="contact" class="contact">
-  <h2>Contact Me</h2>
-  <p>Let's build something amazing 🚀</p>
-  <div class="links">
-    <a href="#">GitHub</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Email</a>
-  </div>
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: your@email.com</p>
+    </div>
 </section>
 
 <footer>
-  <p>© 2026 My Portfolio</p>
+    <p>© 2026 My Portfolio</p>
 </footer>
 
 </body>
 </html>
-
-/* ================= CSS ================= */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
-  background: rgba(0,0,0,0.5);
-  position: fixed;
-  width: 100%;
-}
-
-.navbar a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: white;
-}
-
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero span {
-  color: #38bdf8;
-}
-
-.hero button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: none;
-  background: #38bdf8;
-  cursor: pointer;
-}
-
-.projects {
-  padding: 100px 50px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #1e293b;
-  padding: 10px;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.contact {
-  padding: 100px 50px;
-  text-align: center;
-}
-
-.links a {
-  margin: 10px;
-  display: inline-block;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #020617;
-}
